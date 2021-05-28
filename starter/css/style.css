@@ -45,11 +45,13 @@ body {
   color: white;
   top: 40%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .heading-primary {
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .heading-primary-main {
@@ -57,6 +59,9 @@ body {
   font-size: 50px;
   font-weight: 400;
   letter-spacing: 20px;
+  animation: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
 }
 
 .heading-primary-sub {
@@ -64,4 +69,68 @@ body {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 10px;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 10px 40px;
+  margin-top: 20px;
+}
+
+
+.btn-white {
+  background-color: white;
+  color: gray;
+  animation: moveInBottom 2s ease-out 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
