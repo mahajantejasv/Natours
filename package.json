@@ -1,0 +1,21 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "This is a demo Project for learning advanced CSS",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahajantejasv/Natours.git"
+  },
+  "author": "Tejas Mahajan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahajantejasv/Natours/issues"
+  },
+  "homepage": "https://github.com/mahajantejasv/Natours#readme"
+}
