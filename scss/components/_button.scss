@@ -1,0 +1,48 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10rem;
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  transition: all 0.2s;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($black, 0.2);
+  }
+
+  &:active {
+    transform: translateY(0.3rem);
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.2);
+  }
+
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+}
+
+.btn-white {
+  background-color: $white;
+  color: $gray;
+  animation: moveInBottom 2s ease-out 1s;
+  animation-fill-mode: backwards;
+
+  &::after {
+    background-color: $white;
+  }
+}
