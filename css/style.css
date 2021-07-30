@@ -40,12 +40,34 @@ html {
   font-size: 62.5%; }
 
 body {
+  padding: 2rem; }
+
+body {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #777;
-  padding: 2rem; }
+  color: #777; }
+
+.heading-primary {
+  text-transform: uppercase;
+  margin-bottom: 3rem; }
+  .heading-primary .heading-primary-main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 2rem;
+    animation: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+  .heading-primary .heading-primary-sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
 
 .btn {
   display: inline-block;
@@ -86,7 +108,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #28b485, #7ed56f), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, #28b485bd, #7ed56fbd), url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -104,22 +126,41 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-    .header .text-box .heading-primary {
-      text-transform: uppercase;
-      margin-bottom: 3rem; }
-      .header .text-box .heading-primary .heading-primary-main {
-        display: block;
-        font-size: 5rem;
-        font-weight: 400;
-        letter-spacing: 2rem;
-        animation: moveInLeft;
-        animation-duration: 2s;
-        animation-timing-function: ease-out; }
-      .header .text-box .heading-primary .heading-primary-sub {
-        display: block;
-        font-size: 2rem;
-        font-weight: 400;
-        letter-spacing: 1rem;
-        animation-name: moveInRight;
-        animation-duration: 2s;
-        animation-timing-function: ease-out; }
+
+.grid-section {
+  max-width: 114rem;
+  margin-top: 8rem; }
+
+.row {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #eee; }
+  .row:not(:last-child) {
+    margin-bottom: 4rem; }
+  .row::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    background-color: orangered;
+    color: #ffffff;
+    float: left; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-3 {
+    width: calc((100% - (6rem * 2)) / 3); }
+    .row .col-1-of-3:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-4 {
+    width: calc((100% - (6rem * 3)) / 4); }
+    .row .col-1-of-4:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-2-of-3 {
+    width: calc( (2 * ((100% - (6rem * 2)) / 3)) + 6rem); }
+  .row .col-2-of-4 {
+    width: calc((100% - (6rem)) / 2); }
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - (6rem * 3)) / 4) + (6rem * 2)); }

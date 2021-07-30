@@ -1,7 +1,14 @@
-
-$LightGreen: #7ed56f;
+//COLOR
+$LightGreen: #7ed56fbd;
 $MediumGreen: #55c57a;
-$DarkGreen: #28b485;
+$DarkGreen: #28b485bd;
 $white: #ffffff;
 $gray: #808080;
 $black: #000000;
+$grid-row-background: #eee;
+$grid-cell-color: orangered;
+
+//GRID ROW SPACING
+$grid-width: 114rem;
+$gutter-verticle: 4rem;
+$gutter-horizantal: 6rem;
