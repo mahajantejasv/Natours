@@ -128,7 +128,7 @@ body {
     text-align: center; }
 
 .grid-section {
-  max-width: 114rem;
+  max-width: 100%;
   margin-top: 8rem; }
 
 .row {
