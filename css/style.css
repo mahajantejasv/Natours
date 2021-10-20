@@ -1,3 +1,14 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  padding: 2rem; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -31,17 +42,6 @@
     opacity: 1;
     transform: translateY(0rem); } }
 
-*, *::after, *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  padding: 2rem; }
-
 body {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
@@ -68,6 +68,47 @@ body {
     animation-name: moveInRight;
     animation-duration: 2s;
     animation-timing-function: ease-out; }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right bottom, #7ed56fbd, #28b485bd);
+  -webkit-background-clip: text;
+  letter-spacing: 1.5px;
+  color: transparent;
+  transition: all 0.2s; }
+  .heading-secondary:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: skewY(2deg) skewX(15deg) scale(1.1); }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-text-center {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.about-section {
+  background-color: #f7f7f7;
+  margin-top: -20vh;
+  padding: 10rem 5rem 5rem 5rem; }
 
 .btn {
   display: inline-block;
@@ -106,12 +147,26 @@ body {
   .btn-white::after {
     background-color: #ffffff; }
 
+.btn-hyperlink {
+  color: #7ed56fbd;
+  text-decoration: none;
+  border-bottom: 1px solid #7ed56fbd;
+  padding-bottom: 0.3rem;
+  transition: all 0.2s;
+  cursor: pointer; }
+  .btn-hyperlink:hover {
+    color: #ffffff;
+    background-color: #28b485bd;
+    transform: scaleX(1rem) scaleY(1rem); }
+  .btn-hyperlink:active {
+    transform: translateY(1rem); }
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, #28b485bd, #7ed56fbd), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, #28b485bd, #7ed56fbd), url("../../img/hero.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   position: relative; }
   .header .logo-box {
     position: absolute;
@@ -134,8 +189,7 @@ body {
 .row {
   display: inline-block;
   width: 100%;
-  margin: 0 auto;
-  background-color: #eee; }
+  margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 4rem; }
   .row::after {
@@ -143,8 +197,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: orangered;
-    color: #ffffff;
     float: left; }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }

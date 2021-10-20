@@ -7,7 +7,8 @@
   display: inline-block;
   width: 100%;
   margin: 0 auto;
-  background-color: $grid-row-background;
+  // uncomment line below to view grid section
+  // background-color: $grid-row-background;
 
   &:not(:last-child) {
     margin-bottom: $gutter-verticle;
@@ -16,8 +17,9 @@
   @include clearfix;
 
   [class^="col-"] {
-    background-color: $grid-cell-color;
-    color: $white;
+    // uncomment line below to view grid section
+    // background-color: $grid-cell-color;
+    // color: $white;
     float: left;
   }
 

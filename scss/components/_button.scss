@@ -46,3 +46,20 @@
     background-color: $white;
   }
 }
+
+.btn-hyperlink {
+  color: $LightGreen;
+  text-decoration: none;
+  border-bottom: 1px solid $LightGreen;
+  padding-bottom: 0.3rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+    background-color: $DarkGreen;
+    transform: scaleX(1rem) scaleY(1rem);
+  }
+  &:active {
+    transform: translateY(1rem);
+  }
+}

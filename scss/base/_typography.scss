@@ -29,3 +29,32 @@ body {
     animation-timing-function: ease-out;
   }
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right bottom, $LightGreen, $DarkGreen);
+  -webkit-background-clip: text;
+  letter-spacing: 1.5px;
+  color: transparent;
+  transition: all 0.2s;
+  &:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba($black, 0.4);
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
