@@ -108,7 +108,7 @@ body {
 .about-section {
   background-color: #f7f7f7;
   margin-top: -20vh;
-  padding: 10rem 5rem 5rem 5rem; }
+  padding: 10rem 10rem 5rem 10rem; }
 
 .btn {
   display: inline-block;
@@ -151,15 +151,50 @@ body {
   color: #7ed56fbd;
   text-decoration: none;
   border-bottom: 1px solid #7ed56fbd;
-  padding-bottom: 0.3rem;
+  padding: 0.5rem;
   transition: all 0.2s;
-  cursor: pointer; }
+  cursor: pointer;
+  border-radius: 0.3rem;
+  font-size: 1.6rem; }
   .btn-hyperlink:hover {
     color: #ffffff;
     background-color: #28b485bd;
-    transform: scaleX(1rem) scaleY(1rem); }
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transition: all 0.2s; }
   .btn-hyperlink:active {
-    transform: translateY(1rem); }
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: translateY(0px);
+    transition: all 0.2s; }
+
+.composition {
+  position: relative; }
+  .composition .composition-photo {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 3px;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    position: absolute; }
+  .composition .composition-photo-1 {
+    top: -2rem; }
+    .composition .composition-photo-1:hover {
+      padding: 5px;
+      border: 10px solid #28b485bd;
+      z-index: 1000; }
+  .composition .composition-photo-2 {
+    right: 3rem; }
+    .composition .composition-photo-2:hover {
+      padding: 5px;
+      border: 10px solid #28b485bd;
+      z-index: 1000; }
+  .composition .composition-photo-3 {
+    right: 15rem;
+    top: 10rem; }
+    .composition .composition-photo-3:hover {
+      padding: 5px;
+      border: 10px solid #28b485bd;
+      z-index: 1000; }
 
 .header {
   height: 95vh;

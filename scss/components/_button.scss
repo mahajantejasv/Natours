@@ -51,15 +51,21 @@
   color: $LightGreen;
   text-decoration: none;
   border-bottom: 1px solid $LightGreen;
-  padding-bottom: 0.3rem;
+  padding: 0.5rem;
   transition: all 0.2s;
   cursor: pointer;
+  border-radius: 0.3rem;
+  font-size: $default-font-size;
   &:hover {
     color: $white;
     background-color: $DarkGreen;
-    transform: scaleX(1rem) scaleY(1rem);
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba($black, 0.2);
+    transition: all 0.2s;
   }
   &:active {
-    transform: translateY(1rem);
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.2);
+    transform: translateY(0px);
+    transition: all 0.2s;
   }
 }
