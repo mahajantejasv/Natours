@@ -3,24 +3,24 @@
   .composition-photo {
     width: 25rem;
     height: 25rem;
-    border-radius: 3px;
-    box-shadow: 0 2rem 2rem rgba($black, 0.2);
     transition: all 0.2s;
     position: absolute;
+    &:hover {
+      padding: 5px;
+      border: 10px solid $DarkGreen;
+      border-radius: 3px;
+      box-shadow: 0 2.5rem 4rem rgba($black, 0.5);
+    }
   }
   .composition-photo-1 {
     top: -2rem;
     &:hover {
-      padding: 5px;
-      border: 10px solid $DarkGreen;
       z-index: 1000;
     }
   }
   .composition-photo-2 {
     right: 3rem;
     &:hover {
-      padding: 5px;
-      border: 10px solid $DarkGreen;
       z-index: 1000;
     }
   }
@@ -28,8 +28,6 @@
     right: 15rem;
     top: 10rem;
     &:hover {
-      padding: 5px;
-      border: 10px solid $DarkGreen;
       z-index: 1000;
     }
   }

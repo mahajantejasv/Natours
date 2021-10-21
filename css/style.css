@@ -107,7 +107,7 @@ body {
 
 .about-section {
   background-color: #f7f7f7;
-  margin-top: -20vh;
+  margin-top: -15vh;
   padding: 10rem 10rem 5rem 10rem; }
 
 .btn {
@@ -172,28 +172,25 @@ body {
   .composition .composition-photo {
     width: 25rem;
     height: 25rem;
-    border-radius: 3px;
-    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
     transition: all 0.2s;
     position: absolute; }
+    .composition .composition-photo:hover {
+      padding: 5px;
+      border: 10px solid #28b485bd;
+      border-radius: 3px;
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
   .composition .composition-photo-1 {
     top: -2rem; }
     .composition .composition-photo-1:hover {
-      padding: 5px;
-      border: 10px solid #28b485bd;
       z-index: 1000; }
   .composition .composition-photo-2 {
     right: 3rem; }
     .composition .composition-photo-2:hover {
-      padding: 5px;
-      border: 10px solid #28b485bd;
       z-index: 1000; }
   .composition .composition-photo-3 {
     right: 15rem;
     top: 10rem; }
     .composition .composition-photo-3:hover {
-      padding: 5px;
-      border: 10px solid #28b485bd;
       z-index: 1000; }
 
 .header {
