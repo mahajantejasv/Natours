@@ -1,0 +1,19 @@
+.section-feature {
+  padding: 20px 0px;
+  text-align: center;
+  transition: all 0.3s;
+  background-image: linear-gradient(to right bottom, $LightGreen, $DarkGreen),
+    url(../img/nat-4.jpg);
+  background-size: cover;
+  -webkit-transform: skewY(-7deg);
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+  .feature-row {
+    transform: skewY(7deg);
+    .feature-box {
+      border: 1px solid rgba($black, 0.2);
+      .feature-icon {
+      }
+    }
+  }
+}
