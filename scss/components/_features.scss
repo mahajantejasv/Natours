@@ -1,5 +1,5 @@
 .section-feature {
-  padding: 20px 0px;
+  padding: 20rem 0px;
   text-align: center;
   transition: all 0.3s;
   background-image: linear-gradient(to right bottom, $LightGreen, $DarkGreen),
@@ -10,9 +10,22 @@
   margin-top: -10rem;
   .feature-row {
     transform: skewY(7deg);
+    max-width: 114rem;
     .feature-box {
-      border: 1px solid rgba($black, 0.2);
+      // border: 3px solid rgba($black, 0.2);
+      background-color: rgba($white, 0.8);
+      box-shadow: 0 1.5rem 4rem rgba($black, 1.5);
+      border-radius: 3px;
+      font-size: 1.5rem;
+      padding: 2.5rem;
+      text-align: center;
       .feature-icon {
+        font-size: 6rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $LightGreen, $DarkGreen);
+        -webkit-background-clip: text;
+        color: transparent;
       }
     }
   }
