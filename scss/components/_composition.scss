@@ -6,10 +6,13 @@
     transition: all 0.2s;
     position: absolute;
     &:hover {
-      padding: 5px;
-      border: 10px solid $DarkGreen;
+      outline-offset: 10px;
+      outline: 10px solid $DarkGreen;
       border-radius: 3px;
       box-shadow: 0 2.5rem 4rem rgba($black, 0.5);
+    }
+    &:hover &-photo-:not(:hover){
+      transform: scale(90%);
     }
   }
   .composition-photo-1 {
