@@ -221,6 +221,8 @@ body {
         background-image: linear-gradient(to right, #7ed56fbd, #28b485bd);
         -webkit-background-clip: text;
         color: transparent; }
+      .section-feature .feature-row .feature-box:hover {
+        transform: translateY(-1.5rem) scale(1.03); }
 
 .header {
   height: 95vh;
